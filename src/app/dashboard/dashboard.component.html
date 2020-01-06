@@ -1,0 +1,24 @@
+<div>
+<ngx-spinner></ngx-spinner>
+  
+  <div class="row">
+      <div class="col-md-12">
+          <!-- <h2>{{translation.here_you_can_see_all_your_sites || 'Here you can see all your sites'}}</h2> -->
+          <h2>Here you can see all your sites</h2>
+
+      </div>
+  </div>
+  <div class="site-list-content">
+      <div class="row site-list-content" *ngFor="let sites of userSites">
+          <div class="col-sm-12 col-xs-12 col-md-4 col-lg-3" ng-repeat="site in sites">
+              <div class="thumbnail site-content" >  <!-- title="{{site.name}}" -->
+                  <a href="#" > <!-- (click)="selectSite(site)" -->
+                      <img src=""> <!-- src="{{site.imageUrl}}" -->
+                      <img class="siteIcon"> <!-- src="{{site.iconUrl}}" -->
+                  </a>
+              </div>
+
+          </div>
+      </div>
+  </div>
+</div>

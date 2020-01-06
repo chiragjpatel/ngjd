@@ -1,0 +1,33 @@
+<div class="btn-group" dropdown>
+  <button id="button-animated" dropdownToggle type="button" class="btn btn-primary dropdown-toggle"
+          aria-controls="dropdown-animated">
+    Button dropdown <span class="caret"></span>
+  </button>
+  <ul id="dropdown-animated" *dropdownMenu class="dropdown-menu"
+      role="menu" aria-labelledby="button-animated">
+
+    
+        <!-- <li ng-class="accountInfo.hasGlobalPermission?'js-fascia-group-options':''" ng-show="accountInfo.hasGlobalPermission"
+          data-name="Global" data-id="-1"><a href="#"><img src="~/Content/images/logo_global.png" width="48" height="48"
+              data-type="group"> Global</a></li>
+        <li ng-repeat="siteGroup in userSites" ng-class="isGroupInList(siteGroup.id)?'js-fascia-group-options clickable-row':''"
+          on-finish-render="ngRepeatFinished" data-name="Group - {{siteGroup.name}}" data-id="{{siteGroup.id}}"
+          data-type="group" data-code="{{siteGroup.code}}">
+          <a><b>{{siteGroup.name}} Group</b></a>
+          <ul class="js-fascia-options">
+            <li ng-repeat="site in siteGroup.sites" data-name="{{site.name}}" data-id="{{site.id}}" data-type="site"
+              data-code="{{site.code}}" data-groupid="{{siteGroup.id}}" data-groupcode="{{siteGroup.code}}"
+              data-languageid="{{site.languageId}}" data-icon="{{site.iconUrl || site.imageUrl}}"
+              data-imageurl="{{site.imageUrl}}" data-skulevelapproval="{{site.isSkuLevelApproval}}"><a href="#"><img
+                  ng-src="{{site.imageUrl}}" width="48" height="48"> {{site.name}}</a></li>
+          </ul>
+        </li> -->
+    <li *ngFor="let siteGroup of userSites" role="menuitem"><a class="dropdown-item" href="#">{{siteGroup.name}}</a>
+      <ul><li *ngFor="let site of siteGroup.sites"> {{ site.name }} </li></ul>
+    </li>
+    <!-- <li role="menuitem"><a class="dropdown-item" href="#">Another action</a>
+    </li>
+    <li role="menuitem"><a class="dropdown-item" href="#">Something else
+      here</a></li> -->
+  </ul>
+</div>

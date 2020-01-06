@@ -1,0 +1,65 @@
+<div class="wrapper">
+    <!-- Sidebar  -->
+    <nav class="sidebar" id="sidebar">
+        <ul class="list-unstyled components">
+            <li class="active">
+                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                    <i class="fas fa-home"></i>
+                    Home
+                </a>
+                <ul class="collapse list-unstyled" id="homeSubmenu">
+                    <li>
+                        <a href="#">Home 1</a>
+                    </li>
+                    <li>
+                        <a href="#">Home 2</a>
+                    </li>
+                    <li>
+                        <a href="#">Home 3</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-briefcase"></i>
+                    About
+                </a>
+                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                    <i class="fas fa-copy"></i>
+                    Pages
+                </a>
+                <ul class="collapse list-unstyled" id="pageSubmenu">
+                    <li>
+                        <a href="#">Page 1</a>
+                    </li>
+                    <li>
+                        <a href="#">Page 2</a>
+                    </li>
+                    <li>
+                        <a href="#">Page 3</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Page Content  -->
+    <div id="content">
+    </div>
+</div>
+
+<!-- 
+Angular Material SideNavBar
+<button mat-icon-button (click)="snav.toggle()">
+    <mat-icon>menu</mat-icon>
+  </button>
+<mat-sidenav-container class="example-sidenav-container">
+   
+  <mat-sidenav #snav [mode]="'side'" fixedTopGap="56">
+    <mat-nav-list> <a mat-list-item routerLink="." *ngFor="let nav of fillerNav">{{ nav }}</a></mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <p *ngFor="let content of fillerContent">{{ content }}</p>
+  </mat-sidenav-content>
+</mat-sidenav-container> -->

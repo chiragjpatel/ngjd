@@ -1,0 +1,16 @@
+.site-list-content{
+    margin-top:30px;
+}
+.site-content {
+    background-color: cadetblue;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
+    text-align:center;
+    color:white;
+    font-weight:bold;
+    font-size:15px;
+}
+
+.siteIcon {
+    margin-top: -24px;
+    padding-left: 51px;
+}
